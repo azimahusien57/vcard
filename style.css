@@ -1,0 +1,50 @@
+.card {
+  background-image: url(assets/img/funky-lines.png);
+}
+
+nav a {
+  font-family: relive;
+  text-transform: uppercase;
+  color: slategray;
+  font: 16px;
+}
+nav a .active {
+  color: blue;
+  font-weight: bold;
+}
+nav a:hover {
+  color: blue;
+}
+nav h2 {
+  font-weight: bold;
+  font-family: Fiolex Girls;
+  font: 16px;
+  color: darkred;
+}
+.main {
+  color: slategray;
+  font-weight: 200;
+  font-family: "Times New Roman", Times, serif;
+}
+.main p {
+  font-size: 20px;
+  font-weight: 100;
+  scroll-margin-top: 30px;
+}
+.main button {
+  background-color: brown;
+  color: white;
+  margin-top: 20px;
+}
+.card-body {
+  position: relative;
+  overflow: hidden;
+}
+/* posisi absolute foto ada di samping */
+.bg-img {
+  margin-top: 20px;
+  position: absolute;
+  bottom: -58px;
+  right: 0px;
+  width: 50%;
+}

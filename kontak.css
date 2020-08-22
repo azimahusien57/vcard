@@ -1,0 +1,84 @@
+body {
+  background-image: url(img/a.png);
+  background-size: cover;
+}
+
+html {
+  overflow: hidden;
+}
+
+.scroll-chat {
+  box-shadow: 0px 0px 20px;
+  width: 350px;
+  height: 450px;
+  overflow: scroll;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  margin: auto;
+  border-radius: 10px;
+  background: floralwhite;
+  margin-top: 10px;
+}
+
+ul li {
+  list-style: none;
+}
+
+input {
+  width: 95%;
+  height: 50px;
+  line-height: 50px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  margin: auto;
+  margin-left: 15px;
+  border-radius: 40px;
+  outline: none;
+  text-align: center;
+}
+
+.chat {
+  background: #fff;
+  margin-left: -50px;
+  position: relative;
+  overflow: hidden;
+}
+
+.chat p {
+  margin-left: 95px;
+  margin-top: 10px;
+  padding: 10px;
+}
+
+li {
+  height: 50px;
+  line-height: 50px;
+  background: #fff;
+  margin-left: -35px;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+li a {
+  text-decoration: none;
+  margin-top: -10px;
+  margin-left: 105px;
+  font-size: 21px;
+  position: absolute;
+  color: lightblue;
+  font-family: cursive;
+}
+img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-left: 40px;
+  position: absolute;
+}
+p {
+  font-family: cursive;
+}
+::-webkit-scrollbar {
+  width: 20px;
+}

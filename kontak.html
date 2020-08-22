@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Document</title>
+  <link rel="stylesheet" href="kontak.css" />
+</head>
+
+<body>
+  <div class="pemantes-1"></div>
+  <div class="pemantes-2"></div>
+  <div class="container">
+    <div class="scroll-chat">
+      <br />
+      <input type="text" id="search" onkeyup="itsFuncition()" placeholder="    search names..." />
+      <ul id="names">
+        <div class="chat">
+          <li>
+            <img src="img/a.png" alt="cuma ngoding" /><a href="#">nagisa</a>
+            <p>sdfghj</p>
+          </li>
+        </div>
+
+        <div class="chat">
+          <li>
+            <img src="img/1 (5).jpg" alt="cuma ngoding" /><a href="#">kimono</a>
+            <p>sdfghj</p>
+          </li>
+        </div>
+
+        <div class="chat">
+          <li>
+            <img src="img/1 (1).jpg" alt="cuma ngoding" /><a href="#">sakura</a>
+            <p>sdfghj</p>
+          </li>
+        </div>
+        <div class="chat">
+          <li>
+            <img src="img/a.png" alt="cuma ngoding" /><a href="#">karma</a>
+            <p>sdfghj</p>
+          </li>
+        </div>
+        <div class="chat">
+          <li>
+            <img src="img/1 (2).jpg" alt="cuma ngoding" /><a href="#">kuro sensei</a>
+            <p>sdfghj</p>
+          </li>
+        </div>
+        <div class="chat">
+          <li>
+            <img src="img/1 (2).jpg" alt="cuma ngoding" /><a href="#">sutomo</a>
+            <p>sdfghj</p>
+          </li>
+        </div>
+        <div class="chat">
+          <li>
+            <img src="img/1 (3).jpg" alt="cuma ngoding" /><a href="#">kimono</a>
+            <p>sdfghj</p>
+          </li>
+        </div>
+      </ul>
+    </div>
+  </div>
+  <!-- js -->
+  <script>
+    function itsFuncition() {
+      var input, filter, ul, li, a, i, txtValue;
+      input = document.getElementById("search");
+      filter = input.value.toUpperCase();
+      ul = document.getElementById("names");
+      li = ul.getElementsByTagName("li");
+      for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        txtValue = a.textContent || a.innerText;
+        if (txtValue.toUpperCase().indexOF(filter) > -1) {
+          li[i].style.display = "";
+        } else {
+          li[i].style.display = "none";
+        }
+      }
+    }
+  </script>
+</body>
+
+</html>
